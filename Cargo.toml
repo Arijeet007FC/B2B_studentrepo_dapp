@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/report_card_app_backend"
+]
+resolver = "2"

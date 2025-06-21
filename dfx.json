@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "report_card_app_backend": {
+      "candid": "src/report_card_app_backend/report_card_app_backend.did",
+      "package": "report_card_app_backend",
+      "type": "rust"
+    },
+    "report_card_app_frontend": {
+      "dependencies": [
+        "report_card_app_backend"
+      ],
+      "source": [
+        "src/report_card_app_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "report_card_app_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
