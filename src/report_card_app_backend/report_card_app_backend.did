@@ -1,3 +1,14 @@
+type Student = record {
+  name: text;
+  total_marks: nat32;
+  num_subjects: nat32;
+  average: float32;
+  grade: text;
+};
+
 service : {
-    "greet": (text) -> (text) query;
-}
+  "add_student": (text, nat32, nat32) -> ();
+  "get_student": (text) -> (opt Student) query;
+  "delete_student": (text) -> ();
+  "update_marks": (text, nat32, nat32) -> ();
+};

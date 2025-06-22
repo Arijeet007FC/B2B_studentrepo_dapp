@@ -14,5 +14,14 @@
   "type": "module",
   "workspaces": [
     "src/report_card_app_frontend"
-  ]
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "sass": "^1.89.2",
+    "tailwindcss": "^4.1.10"
+  },
+  "dependencies": {
+    "jspdf": "^3.0.1"
+  }
 }
